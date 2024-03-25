@@ -17,7 +17,8 @@ Welcome to the Imperial Discord Bot repository! This repository showcases the co
 
 - **MUCH MORE!**: a wide range of Features from moderation, to Entertainment, all the way to Artificial Intelligence.
 
-Imperial is more than just a bot; it's a community-driven project that grows with your support and feedback. Stay tuned for updates as we expand Imperial's capabilities and redefine what a Discord bot can do!
+Imperial is more than just a bot.
+It's a community-driven project that grows with your support and feedback. Stay tuned for updates as we expand Imperial's capabilities and redefine what a Discord bot can do!
 
 ## Contributing
 We welcome contributions from the community. Whether it's feature suggestions, bug reports, or code contributions, your input is valuable.
