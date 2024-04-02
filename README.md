@@ -15,14 +15,14 @@ Welcome to the Imperial Discord Bot repository! This repository showcases the co
 ## --NEW-- [UPDATE #1]
 - **Code Improvements**
 - **Added /Slash feature to most of the Commands**
-- **Sync** you can basically sync your newly added commands.
+- **Sync**: you can basically sync your newly added commands.
 - **tempmute**: Updated the "mute" command to support TimeConverter.
 - **Banlist**: get user IDs of members in the banlist.
 - **Unmute**: unmute members.
 
 ## Upcoming Features Roadmap
 - **Voice Channel (VC) Support**: Manage and interact with voice channels.
-- **AI Support**: auto-moderation, user engagement, and more.(NOTE: might train ai by myself for a better user experience)
+- **AI**: An ChatGPT-lile AI Assistant for Functionalit, productivity and fun.
 - **MUCH MORE!**: a wide range of Features from moderation, to Entertainment, all the way to Artificial Intelligence.
 
 
