@@ -22,7 +22,7 @@ Welcome to the Imperial Discord Bot repository! This repository showcases the co
 
 ## Upcoming Features Roadmap
 - **Voice Channel (VC) Support**: Manage and interact with voice channels.
-- **AI**: An ChatGPT-lile AI Assistant for Functionalit, productivity and fun.
+- **AI**: An ChatGPT-like AI Assistant for Functionalit, productivity and fun.
 - **MUCH MORE!**: a wide range of Features from moderation, to Entertainment, all the way to Artificial Intelligence.
 
 
