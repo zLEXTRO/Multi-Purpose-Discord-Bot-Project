@@ -6,7 +6,7 @@ Welcome to the Imperial Discord Bot repository! This repository showcases the co
 
 ## Current Features
 - **Slash Commands**
-- **SYNC**: synchronize new commands
+- **Sync**: synchronize new commands
 - **tempmute**: Temporarily silence members to maintain order in your channels.
 - **Banlist**: Get user IDs of members in the banlist.
 - **Unmute**: unmute members.
@@ -17,8 +17,8 @@ Welcome to the Imperial Discord Bot repository! This repository showcases the co
 
 ## --NEW-- [UPDATE #2]
 - **Code Improvements**
-- **Instructions**: How to Setup your Bot (find put bellow)
-- **Softban**: ban & unban members at tye same time
+- **Instructions**: How to Setup your Bot (find out bellow)
+- **Softban**: ban & unban members at the same time
 - **Restriction**: restrict members from accessing the Server.
 - **Embed Creator**: Create customizable Embed message with the help of the [Dispie](https://github.com/PranoyMajumdar/dispie) library
 - **Server Boost Event**: Manage Server Boosters
