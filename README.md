@@ -5,8 +5,8 @@ Welcome to the Imperial Discord Bot repository! This repository showcases the co
 **Please note**: The code and features in this repository are subject to change as the bot evolves. Additionally, inviting Imperial to your own server is not currently possible until it is properly set up and has a sufficient feature set to ensure a great user experience and proper hosting. The code provided is a preview, demonstrating the implementation of the commands and is not the final version.
 
 ## Current Features
--**Slash Commands**
--**SYNC**: synchronize new commands
+- **Slash Commands**
+- **SYNC**: synchronize new commands
 - **tempmute**: Temporarily silence members to maintain order in your channels.
 - **Banlist**: Get user IDs of members in the banlist.
 - **Unmute**: unmute members.
@@ -17,14 +17,14 @@ Welcome to the Imperial Discord Bot repository! This repository showcases the co
 
 ## --NEW-- [UPDATE #2]
 - **Code Improvements**
--**Instructions**: How to Setup your Bot (find put bellow)
--**Softban**: ban & unban members at tye same time
--**Restriction**: restrict members from accessing the Server.
+- **Instructions**: How to Setup your Bot (find put bellow)
+- **Softban**: ban & unban members at tye same time
+- **Restriction**: restrict members from accessing the Server.
 - **Embed Creator**: Create customizable Embed message with the help of the [Dispie](https://github.com/PranoyMajumdar/dispie) library
--**Server Boost Event**: Manage Server Boosters
+- **Server Boost Event**: Manage Server Boosters
 
 ## Upcoming Features Roadmap
--**COGS**: For better organized Commands
+- **COGS**: For better organized Commands
 - **Voice Channel (VC) Support**: Manage and interact with voice channels.
 - **AI Support**: auto-moderation, user engagement, and more.
 - **MUCH MORE!**: a wide range of Features from moderation, to Utility, to Entertainment, all the way to Artificial Intelligence.
@@ -47,7 +47,7 @@ Use any Coding Editor with the Python extension installed.
 
 ## Invite your own Bot
 Invite it by using this URL: https://discordapp.com/oauth2/authorize?client_id=CLIENT_ID&scope=bot<br>
--**NOTE**: replace **CLIENT_ID** with your bot client ID
+- **NOTE**: replace **CLIENT_ID** with your bot client ID
 
 
 
