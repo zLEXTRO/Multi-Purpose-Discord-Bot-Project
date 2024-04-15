@@ -49,11 +49,11 @@ Follow these steps to install `discord.py` and set up your bot:
 5. To add your bot to a server, you'll need to generate an invite URL with the appropriate permissions. You can do this from the bot's application page on the Discord Developer Portal. The URL will look something like this: `https://discordapp.com/oauth2/authorize?client_id=YOUR_BOT_CLIENT_ID&scope=bot&permissions=PERMISSIONS_INTEGER`. Replace `YOUR_BOT_CLIENT_ID` with your bot's client ID and `PERMISSIONS_INTEGER` with the permissions your bot needs, encoded as an integer.
 
 
-```markdown
+
 ## Getting Started with the Bot
 
 To get the bot up and running on your own server, follow these steps:
-
+```markdown
 1. **Clone the Repository**
    First, clone the repository to your local machine using Git. Open your terminal and run:
    ```bash
