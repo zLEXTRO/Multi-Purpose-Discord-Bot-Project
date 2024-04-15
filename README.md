@@ -25,8 +25,10 @@ Welcome to the Imperial Discord Bot repository! This repository showcases the co
 - **Updated Setup Instructions**: A better step-by-step guide on how to setup the Bot
 
 ~ [UPDATE #3 HOTFIX 1]
-``` Removed the "Ban List" Command (temporarely) due to some issues.
-I am working on a fix for it```
+```markdown
+Removed the "Ban List" Command (temporarely) due to some issues.
+I am working on a fix for it
+```
 - Investigating issues with Bot not responding to some `Hybrid` Commands.
 
 ## Upcoming Features Roadmap
@@ -34,7 +36,7 @@ I am working on a fix for it```
 - **Voice Channel (VC) Support**: Manage and interact with voice channels.
 - **AI Support**: Auto-moderation, user engagement, and more.
 - **MUCH MORE!**: A wide range of features from moderation, to utility, to entertainment, all the way to artificial intelligence.
-```- In future updates, I also plan to improve the bot's flexibility by enabling it to accept arguments through commands. This will allow users to customize their interactions without the need for hardcoded values, enhancing the bot's usability and adaptability to different server needs.```
+```In future updates, I also plan to improve the bot's flexibility by enabling it to accept arguments through commands. This will allow users to customize their interactions without the need for hardcoded values, enhancing the bot's usability and adaptability to different server needs.```
 
 ## Installing the Discord.py Library and Setting Up a Discord Bot
 
@@ -55,9 +57,9 @@ Follow these steps to install `discord.py` and set up your bot:
 5. To add your bot to a server, you'll need to generate an invite URL with the appropriate permissions. You can do this from the bot's application page on the Discord Developer Portal. The URL will look something like this: `https://discordapp.com/oauth2/authorize?client_id=YOUR_BOT_CLIENT_ID&scope=bot&permissions=PERMISSIONS_INTEGER`. Replace `YOUR_BOT_CLIENT_ID` with your bot's client ID and `PERMISSIONS_INTEGER` with the permissions your bot needs, encoded as an integer.
 
 
-```markdown
-## Getting Started with the Bot
 
+## Getting Started with the Bot
+```markdown
 To get the bot up and running on your own server, follow these steps:
 
 1. **Clone the Repository**
