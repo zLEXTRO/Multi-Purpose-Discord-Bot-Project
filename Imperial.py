@@ -21,13 +21,13 @@ async def on_ready():
     print(f"logged in as {bot.user.name} ({bot.user.id})")
         
 
-#Unleash the Afterburner
+#Unleash the Afterburner (make sure that Bot is running properly)
 @bot.command()
 async def rise(ctx):
     await ctx.send("**On your Command**")
     await ctx.send('*Latency: {0}*'.format(round(bot.latency, 9)))
 
-#sync slash commands
+#sync newly added commands
 @bot.command()
 async def sync(ctx: commands.Context):
 	await ctx.send('Synced')
@@ -35,7 +35,7 @@ async def sync(ctx: commands.Context):
 
 @bot.command()
 async def userinfo(ctx: commands.Context, user: discord.User):
-# you pass an ID, mention or username 
+# provide a ID, mention or username 
 # Example: 110101011110101, @zLEXTRO or zLEXTRO#0011
 
     user_id = user.id
@@ -46,8 +46,6 @@ async def userinfo(ctx: commands.Context, user: discord.User):
 
 @userinfo.error
 async def userinfo_error(ctx: commands.Context, error: commands.CommandError):
-    #conversion fail. 
-    # so we handle this in this error handler:
     if isinstance(error, commands.BadArgument):
         return await ctx.send('Couldn\'t find that user.')
         
@@ -109,13 +107,6 @@ async def kick(ctx: commands.Context, member: discord.Member, *, reason=None):
 
     await ctx.send(f' {member} has been kicked out.')
         
-#List Banned Members and their IDs
-@bot.hybrid_command(name='banlist', brief='Get User IDs from the Ban List')
-async def banlist(ctx: commands.Context):
-    bans = await ctx.guild.bans()
-    loop = [f"{u[1]} ({u[1].id})" for u in bans]
-    _list = "\r\n".join([f"[{str(num).zfill(2)}] {data}" for num, data in enumerate(loop, start=1)])
-    await ctx.send(f"```ini\n{_list}```")
 
 #ban & unban a User after X amount of time
 @bot.hybrid_command()
@@ -205,4 +196,4 @@ async def create_embed(ctx):
 
 
 
-bot.run('BOT_TOKEN')
+bot.run('BOT_TOKENl')
