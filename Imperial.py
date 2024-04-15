@@ -3,6 +3,7 @@ import os
 import sys
 import typing 
 from typing import Any
+import traceback
 import discord
 from discord.ext import commands
 from discord import app_commands, Colour, Embed, HTTPException, Interaction, SelectOption, TextStyle
@@ -31,6 +32,29 @@ async def rise(ctx):
 async def sync(ctx: commands.Context):
 	await ctx.send('Synced')
 	await bot.tree.sync()
+
+@bot.command()
+async def userinfo(ctx: commands.Context, user: discord.User):
+# you pass an ID, mention or username 
+# Example: 110101011110101, @zLEXTRO or zLEXTRO#0011
+
+    user_id = user.id
+    username = user.name
+    avatar = user.display_avatar.url
+    await ctx.send(f'User found: {user_id} -- {username}\n{avatar}')
+
+
+@userinfo.error
+async def userinfo_error(ctx: commands.Context, error: commands.CommandError):
+    #conversion fail. 
+    # so we handle this in this error handler:
+    if isinstance(error, commands.BadArgument):
+        return await ctx.send('Couldn\'t find that user.')
+        
+# log tracebacks
+    else:
+        traceback.print_exception(type(error), error, error.__traceback__)
+
 
 #custom TimeConverter
 def TimeConverter(time_str):
@@ -69,7 +93,7 @@ async def unmute(ctx: commands.Context, member:discord.Member, *, reason=None):
             await ctx.send(f'Unmuted {member}.')
         
 #restrict members from accessing the server 
-bot.hybrid_command()
+@bot.hybrid_command()
 async def restrict(ctx, member:discord.Member, duration: int):
     role = discord.utils.get(ctx.guild.roles, name="Restricted")
     await member.add_roles(role)
@@ -85,11 +109,11 @@ async def kick(ctx: commands.Context, member: discord.Member, *, reason=None):
 
     await ctx.send(f' {member} has been kicked out.')
         
-#Give User IDs from the Ban List
+#List Banned Members and their IDs
 @bot.hybrid_command(name='banlist', brief='Get User IDs from the Ban List')
-async def banlist(self, ctx):
+async def banlist(ctx: commands.Context):
     bans = await ctx.guild.bans()
-    loop = [f"{u[1]} ({u[1].id})" for user in bans]
+    loop = [f"{u[1]} ({u[1].id})" for u in bans]
     _list = "\r\n".join([f"[{str(num).zfill(2)}] {data}" for num, data in enumerate(loop, start=1)])
     await ctx.send(f"```ini\n{_list}```")
 
@@ -165,10 +189,20 @@ async def on_member_update(before, after):
             await after.remove_roles(discord.utils.get(yourServer.roles, name="Donor"))
             print(f'{current_datetime} INFO: {after.name} has stopped boosting the server and lost the Donor Role :(')
             
-#embed-builder    
+#Embed-Creator (Dispie)
 @bot.hybrid_command(name='create-embed', brief='create an advanced Embed message')
-async def create_embed(ctx: commands.Context):
+async def create_embed(ctx):
     view = EmbedCreator(bot=bot)
-    await ctx.send(embed=view.get_default_embed, view=view)
+    embed = view.get_default_embed  
+# Check if the context is an Interaction
+    if isinstance(ctx, discord.Interaction):
+        await ctx.response.defer()
+        await ctx.followup.send(embed=embed, view=view)
+    # Otherwise, it's a traditional Context
+    else:
+        await ctx.send(embed=embed, view=view)
+
+
+
 
 bot.run('BOT_TOKEN')
