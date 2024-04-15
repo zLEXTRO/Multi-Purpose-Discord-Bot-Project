@@ -59,7 +59,7 @@ Follow these steps to install `discord.py` and set up your bot:
 
 
 ## Getting Started with the Bot
-```markdown
+
 To get the bot up and running on your own server, follow these steps:
 
 1. **Clone the Repository**
