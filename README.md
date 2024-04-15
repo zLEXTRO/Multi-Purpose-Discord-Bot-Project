@@ -14,14 +14,15 @@ Welcome to the Imperial Discord Bot repository! This repository showcases the co
 - **Ban Members**: Keep your server safe by banning disruptive members.
 - **Unban Members**: Allow members another chance by lifting bans when appropriate.
 - **Purge Messages**: Clean up your chat by bulk-deleting messages quickly and efficiently.
-
-## --NEW-- [UPDATE #2]
-- **Code Improvements**
-- **Instructions**: How to Setup your Bot (find out bellow)
 - **Softban**: ban & unban members at the same time
 - **Restriction**: restrict members from accessing the Server.
 - **Embed Creator**: Create customizable Embed message with the help of the [Dispie](https://github.com/PranoyMajumdar/dispie) library
 - **Server Boost Event**: Manage Server Boosters
+
+## --NEW-- [UPDATE #3]
+- **Minor Code Improvements**
+- **Userinfo**: get infirmation about a user
+
 
 ## Upcoming Features Roadmap
 - **COGS**: For better organized Commands
