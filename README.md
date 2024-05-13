@@ -1,8 +1,6 @@
-# Imperial Discord Bot
+# Multi-Purpose Discord Bot Commands
 
-Welcome to the Imperial Discord Bot repository! This repository showcases the code of my upcoming Discord bot, Imperial. It's an ambitious project aimed at creating a comprehensive multi-purpose bot designed to enhance the Discord experience. Currently equipped with essential moderation tools, Imperial is on a path of continuous development to integrate a wide array of features.
-
-**Please note**: The code and features in this repository are subject to change as the bot evolves. Additionally, inviting Imperial to your own server is not currently possible until it is properly set up and has a sufficient feature set to ensure a great user experience and proper hosting. The code provided is a preview, demonstrating the implementation of the commands and is not the final version.
+Welcome to the repository! This repository showcases the code of my upcoming Discord bot, Imperial. It's an ambitious project aimed at creating a comprehensive multi-purpose bot designed to enhance the Discord experience. Currently equipped with essential moderation tools, Imperial is on a path of continuous development to integrate a wide array of features.
 
 ## Current Features
 - **Slash Commands Support**
@@ -19,24 +17,6 @@ Welcome to the Imperial Discord Bot repository! This repository showcases the co
 - **Embed Creator**: Create customizable embed messages with the help of the Dispie library.
 - **Server Boost Event**: Manage server boosters.
 
-## --NEW-- [UPDATE #3]
-- **Minor Code Improvements**
-- **Userinfo**: Get information about a user.
-- **Updated Setup Instructions**: A better step-by-step guide on how to setup the Bot
-
-~ [UPDATE #3 HOTFIX 1]
-```markdown
-Removed the "Ban List" Command (temporarely) due to some issues.
-I am working on a fix for it
-```
-- Investigating issues with Bot not responding to some `Hybrid` Commands.
-
-## Upcoming Features Roadmap
-- **COGS**: For better organized commands.
-- **Voice Channel (VC) Support**: Manage and interact with voice channels.
-- **AI Support**: Auto-moderation, user engagement, and more.
-- **MUCH MORE!**: A wide range of features from moderation, to utility, to entertainment, all the way to artificial intelligence.
-```In future updates, I also plan to improve the bot's flexibility by enabling it to accept arguments through commands. This will allow users to customize their interactions without the need for hardcoded values, enhancing the bot's usability and adaptability to different server needs.```
 
 ## Installing the Discord.py Library and Setting Up a Discord Bot
 
@@ -105,10 +85,6 @@ For better installation method visit [this](https://docs.discloudbot.com/v/en/su
 Example: `-rise`
 Remember to keep your Discord token private and never share it with anyone. If you suspect that your token has been compromised, regenerate it immediately on the Discord Developer Portal.
 ```
-
-
-Imperial is more than just a bot.
-It's a community-driven project that grows with your support and feedback. Stay tuned for updates as I expand Imperial's capabilities and redefine what a Discord bot can do.
 
 ## Contributing
 I welcome contributions from the community. Whether it's feature suggestions, bug reports, or code contributions, your input is valuable.
